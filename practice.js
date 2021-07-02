@@ -2,16 +2,16 @@ onload = function () {
     // create a network
     const cities = ['Delhi', 'Mumbai', 'Ahmedabad', 'New York', 'Kanpur', 'Jammu', 'Hyderabad', 'Bangalore', 'Gangtok', 'Meghalaya', 'Washington', "Aberdeen", "Abilene", "Akron", "Albany", "Albuquerque", "Alexandria", "Allentown", "Amarillo", "Anaheim", "Anchorage", "Ann Arbor", "Antioch", "Apple Valley", "Appleton", "Arlington", "Arvada", "Asheville", "Athens", "Atlanta", "Atlantic City", "Augusta", "Aurora", "Austin", "Bakersfield", "Baltimore", "Barnstable", "Baton Rouge", "Beaumont", "Bel Air", "Bellevue", "Berkeley", "Bethlehem", "Billings", "Birmingham", "Bloomington", "Boise", "Boise City", "Bonita Springs", "Boston", "Boulder", "Bradenton", "Bremerton", "Bridgeport", "Brighton", "Brownsville", "Bryan", "Buffalo", "Burbank", "Burlington", "Cambridge", "Canton", "Cape Coral", "Carrollton", "Cary", "Cathedral City", "Cedar Rapids", "Champaign", "Chandler", "Charleston", "Charlotte", "Chattanooga", "Chesapeake", "Chicago", "Chula Vista", "Cincinnati", "Clarke County", "Clarksville", "Clearwater", "Cleveland", "College Station", "Colorado Springs", "Columbia", "Columbus", "Concord", "Coral Springs", "Corona", "Corpus Christi", "Costa Mesa", "Dallas", "Daly City", "Danbury", "Davenport", "Davidson County", "Dayton", "Daytona Beach", "Deltona", "Denton", "Denver", "Des Moines", "Detroit", "Downey", "Duluth", "Durham", "El Monte", "El Paso", "Elizabeth", "Elk Grove", "Elkhart", "Erie", "Escondido", "Eugene", "Evansville", "Fairfield", "Fargo", "Fayetteville", "Fitchburg", "Flint", "Fontana", "Fort Collins", "Fort Lauderdale", "Fort Smith", "Fort Walton Beach", "Fort Wayne", "Fort Worth", "Frederick", "Fremont", "Fresno", "Fullerton", "Gainesville", "Garden Grove", "Garland", "Gastonia", "Gilbert", "Glendale", "Grand Prairie", "Grand Rapids", "Grayslake", "Green Bay", "GreenBay", "Greensboro", "Greenville", "Gulfport-Biloxi", "Hagerstown", "Hampton", "Harlingen", "Harrisburg", "Hartford", "Havre de Grace", "Hayward", "Hemet", "Henderson", "Hesperia", "Hialeah", "Hickory", "High Point", "Hollywood", "Honolulu", "Houma", "Houston", "Howell", "Huntington", "Huntington Beach", "Huntsville", "Independence", "Indianapolis", "Inglewood", "Irvine", "Irving", "Jackson", "Jacksonville", "Jefferson", "Jersey City", "Johnson City", "Joliet", "Kailua", "Kalamazoo", "Kaneohe", "Kansas City", "Kennewick", "Kenosha", "Killeen", "Kissimmee", "Knoxville", "Lacey", "Lafayette", "Lake Charles", "Lakeland", "Lakewood", "Lancaster", "Lansing", "Laredo", "Las Cruces", "Las Vegas", "Layton", "Leominster", "Lewisville", "Lexington", "Lincoln", "Little Rock", "Long Beach", "Lorain", "Los Angeles", "Louisville", "Lowell", "Lubbock", "Macon", "Madison", "Manchester", "Marina", "Marysville", "McAllen", "McHenry", "Medford", "Melbourne", "Memphis", "Merced", "Mesa", "Mesquite", "Miami", "Milwaukee", "Minneapolis", "Miramar", "Mission Viejo", "Mobile", "Modesto", "Monroe", "Monterey", "Montgomery", "Moreno Valley", "Murfreesboro", "Murrieta", "Muskegon", "Myrtle Beach", "Naperville", "Naples", "Nashua", "Nashville", "New Bedford", "New Haven", "New London", "New Orleans", "New York", "New York City", "Newark", "Newburgh", "Newport News", "Norfolk", "Normal", "Norman", "North Charleston", "North Las Vegas", "North Port", "Norwalk", "Norwich", "Oakland", "Ocala", "Oceanside", "Odessa", "Ogden", "Oklahoma City", "Olathe", "Olympia", "Omaha", "Ontario", "Orange", "Orem", "Orlando", "Overland Park", "Oxnard", "Palm Bay", "Palm Springs", "Palmdale", "Panama City", "Pasadena", "Paterson", "Pembroke Pines", "Pensacola", "Peoria", "Philadelphia", "Phoenix", "Pittsburgh", "Plano", "Pomona", "Pompano Beach", "Port Arthur", "Port Orange", "Port Saint Lucie", "Port St. Lucie", "Portland", "Portsmouth", "Poughkeepsie", "Providence", "Provo", "Pueblo", "Punta Gorda", "Racine", "Raleigh", "Rancho Cucamonga", "Reading", "Redding", "Reno", "Richland", "Richmond", "Richmond County", "Riverside", "Roanoke", "Rochester", "Rockford", "Roseville", "Round Lake Beach", "Sacramento", "Saginaw", "Saint Louis", "Saint Paul", "Saint Petersburg", "Salem", "Salinas", "Salt Lake City", "San Antonio", "San Bernardino", "San Buenaventura", "San Diego", "San Francisco", "San Jose", "Santa Ana", "Santa Barbara", "Santa Clara", "Santa Clarita", "Santa Cruz", "Santa Maria", "Santa Rosa", "Sarasota", "Savannah", "Scottsdale", "Scranton", "Seaside", "Seattle", "Sebastian", "Shreveport", "Simi Valley", "Sioux City", "Sioux Falls", "South Bend", "South Lyon", "Spartanburg", "Spokane", "Springdale", "Springfield", "St. Louis", "St. Paul", "St. Petersburg", "Stamford", "Sterling Heights", "Stockton", "Sunnyvale", "Syracuse", "Tacoma", "Tallahassee", "Tampa", "Temecula", "Tempe", "Thornton", "Thousand Oaks", "Toledo", "Topeka", "Torrance", "Trenton", "Tucson", "Tulsa", "Tuscaloosa", "Tyler", "Utica", "Vallejo", "Vancouver", "Vero Beach", "Victorville", "Virginia Beach", "Visalia", "Waco", "Warren", "Washington", "Waterbury", "Waterloo", "West Covina", "West Valley City", "Westminster", "Wichita", "Wilmington", "Winston", "Winter Haven", "Worcester", "Yakima", "Yonkers", "York", "Youngstown"];    var curr_data;
     var sz;
-    var container = document.getElementById('mynetwork');                   // left mai jo question hai(randomly generated)
-    var container2 = document.getElementById('mynetwork2');                 // right mai jo sol bana hai
-    var genNew = document.getElementById('generate-graph');                 // button for generating the graph
-    var solve = document.getElementById('solve');                           // button for solving the graph
+    var container = document.getElementById('mynetwork');                  
+    var container2 = document.getElementById('mynetwork2');                
+    var genNew = document.getElementById('generate-graph');              
+    var solve = document.getElementById('solve');                          
     var temptext = document.getElementById('temptext');                 
-    var temptext2 = document.getElementById('temptext2');                   // diplays the message that least path from this to this city
+    var temptext2 = document.getElementById('temptext2');                  
     
 
     // initialise graph options
-    var options = {                                                         // ye wale initializing conditions hai(ki icon kaisa dikhega, font color and all)
+    var options = {                                                        
         edges: {
             labelHighlightBold: true,
             font: {
@@ -35,15 +35,12 @@ onload = function () {
 
 
     // initialize your network!
-    var network = new vis.Network(container);                               // upar jo initialize kie the, unhi ko vis ke graph mai daalenge(ye hai question wala graph--->left)
+    var network = new vis.Network(container);                              
     network.setOptions(options);
-    var network2 = new vis.Network(container2);                             // for the right wala graph, wherein the calculations for the shortest distance is shown
+    var network2 = new vis.Network(container2);                             
     network2.setOptions(options);
 
     // THE MOST IMPORTANT FUNCTION FOR CREATING THE GRAPH (USING EDGE LIST!!!!!!!!!!!)
-    //the nodes are chosen initially
-    //N-1 edges which is the bare minimum requirment for a graph setup is made
-    //another set of N/5 edges are made(dekhne mai kucj zyada hi sparse na ho :))))))
     function createData(){                                                  
         sz = Math.floor(Math.random() * 25) + 125;                               // max to max 75 cities and minimum is 25 cities
         let nodes = [];                                                         // choosing the nodes
@@ -55,7 +52,7 @@ onload = function () {
         nodes = new vis.DataSet(nodes);
 
         let edges = [];
-        for(let i=2;i<=sz;i++){                                                 // we know that for a graph, minimum N-1 edges should exist!!!
+        for(let i=2;i<=sz;i++){                                                 
             let neigh = i - Math.floor(Math.random()*Math.min(i-1,3)+1);
             edges.push({type: 0, from: i, to: neigh, color: 'blue',label: String(Math.floor(Math.random()*50)+200)});
         }
@@ -66,20 +63,17 @@ onload = function () {
         for(let i=1;i<=sz/2;){                                                  // gonna have anothere set of N/2 nodes!!!
             let n1 = Math.floor(Math.random()*sz)+1;                            // start node 
             let n2 = Math.floor(Math.random()*sz)+1;                            // end node
-            // we have to ensure that the new edge chosen follows these conditions:-
-            // firstly, the start and end should not be same
-            // secondly, the the edge should not be an existing one
-            // once these are satisfied, we can play with some conditions like weight(distance) & the type of transport
+   
             if(n1!=n2){                                                         
                 if(n1<n2){
                     let tmp = n1;
                     n1 = n2;
                     n2 = tmp;
                 }
-                let works = 0;                                                  // used to toggle b/w transportation & weight
+                let works = 0;                                               
                 for(let j=0;j<edges.length;j++){    
                     if(edges[j]['from']===n1 && edges[j]['to']===n2) {
-                        if(edges[j]['type']===0)                                // iska matlab ki the new edge is called again(demand zyada hai) so make it flight transport
+                        if(edges[j]['type']===0)                               
                             works = 1;
                         else
                             works = 2;                                          
@@ -116,7 +110,7 @@ onload = function () {
         curr_data = data;
     }
 
-    genNew.onclick = function () {                                              // generate button pe dabate hi new graph milega!
+    genNew.onclick = function () {
         createData();                                                            
         network.setData(curr_data);
         temptext2.innerText = 'Find least time path from '+cities[src-1]+' to '+cities[dst-1];
@@ -126,7 +120,7 @@ onload = function () {
 
     };
 
-    solve.onclick = function () {                                               // solve button dabate hi answer!
+    solve.onclick = function () {                                               
         temptext.style.display  = "none";
         temptext2.style.display  = "none";
         container2.style.display = "inline";
